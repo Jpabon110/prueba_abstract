@@ -8,7 +8,7 @@ const getPlayersByIdEvent = async (req, res) => {
     try {
         const Players = await Player.findAll({ where:{ event_id: id } });
         if (!Players) return res.status(404).send({message: 'No hay jugadores para este evento.'});
-        res.status(201).json(Players);
+        res.status(200).json(Players);
     } catch (e) {
         console.log(e);
         res.status(500).send({ message: 'Error al obtener los jugadores', code: 'ErrorPlayers' })
@@ -61,7 +61,7 @@ const deletePlayer = async (req, res) => {
         const thePlayer = await Player.findOne({where:{ id }});
         if (!thePlayer) return res.status(404).send({message: 'El jugador no existe.'}); 
         await Player.destroy({where:{ id }});
-        res.status(200).send({message: 'Jugador eliminado correctamente'});
+        res.status(204).send({message: 'Jugador eliminado correctamente'});
     } catch (e) {
         console.log(e);
         res.status(500).send({message: 'Error al borra Jugador.', code: 'errorDeletePlayer'});
