@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import superagent from 'superagent';
 
-const API_ROOT = 'http://localhost:8080';
+const API_ROOT = process.env.REACT_APP_URL_BACKEND;
 // const CLOUDINARY_UPLOAD_URL = process.env.REACT_APP_CLOUDINARY_UPLOAD_URL;
 
 let token = window.localStorage.getItem('accessToken') || null;
