@@ -33,6 +33,7 @@ class EventEnclosure extends Component {
 
   render() {
       const { infoEvent } = this.props;
+      
     return (
         <div className="dashboard container" style={{ border: '1px solid rgba(0,0,0,.125)', borderRadius: '4px' }}>
             <label>Información del Recinto deportivo</label>

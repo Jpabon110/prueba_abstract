@@ -18,7 +18,7 @@ const transporter = Nodemailer.createTransport({
   sendInvitation = (params) => {
     const { to, subject = 'Invitación para partido', name, id, playerId } = params;
     const mailOptions = {
-      from: process.env.FROM_MAIL,
+      from: process.env.EMAIL_USER,
       to,
       subject,
       html: `<p>Hola ${name} has sido invitado a un partido, en el siguiente link puedes revisarlo: <a href="${process.env.APP_URL_BASE}/response/${id}/${playerId}">Aqui</a></p>`,

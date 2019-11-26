@@ -32,9 +32,9 @@ class Index extends Component {
   componentDidMount() {
     const { id } = this.props.match.params;
     this.props.getEventById(id, body =>{
+      console.log('body', body);
       this.setState({infoEvent:  body});
       this.props.getAllPlayersByIdEvent(id, body2 =>{
-        console.log('body2', body2);
         this.setState({infoPlayers:  body2});
       });
     });
@@ -63,6 +63,8 @@ class Index extends Component {
 
   render() {
     const { infoEvent } = this.state; 
+
+    console.log('infoEvent', infoEvent);
     
     return (
       <Fragment>
@@ -82,7 +84,7 @@ class Index extends Component {
                       />
                       <br />
                       <EventEnclosureContents
-                        infoEvent={this.findInfo(infoEvent.typesGameId)}
+                        infoEvent={this.findInfo(infoEvent.enclosure)}
                       />
                     </div>
                     <div className="col-md-6" >
