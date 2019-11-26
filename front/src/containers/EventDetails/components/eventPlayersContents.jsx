@@ -261,7 +261,7 @@ class UsersList extends Component {
                         value={this.state.inputEmail}
                         style={{ width: '58%', marginRight: '10%' }}
                         />
-                        <Button className="asignar" color="info" onClick={this.onClickAction('send')}>Invitar Jugadores</Button>{' '}
+                        <Button className="asignar" color="info" onClick={this.onClickAction('send')}>Invitar Jugador</Button>{' '}
                     </div>
                 </FormGroup>
             </div>
