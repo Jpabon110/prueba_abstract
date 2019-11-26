@@ -1,0 +1,116 @@
+.modal-dialog {
+  max-width: 50% !important;
+}
+
+.modal-content {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 50px 40px 60px 40px;
+  text-align: center;
+}
+
+.modal-dialog-scrollable .modal-body {
+  height: 20rem;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: transparent;
+
+}
+
+.modal__title-icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+
+.modal__title {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.modal__footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around !important;
+  margin-bottom: 0;
+}
+
+.modal__footer button {
+    min-width: 100px;
+    padding: 4px 25px;
+    margin-bottom: 0;
+  }
+
+
+.modal-dialog--colored {
+  color: white;
+}
+  .modal-dialog--colored .modal__title-icon {
+    color: white;
+  }
+
+  .modal-dialog--colored .modal__close-btn {
+    color: #000000;
+  }
+    
+  .modal-dialog--colored .modal__footer button:first-child {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #ffffff;
+  }
+  .modal-dialog--colored .modal__footer button:first-child .modal-dialog--colored .modal__footer:before {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+  .modal-dialog--colored .modal__footer button:last-child {
+    border-color: white;
+    color: white;
+  }
+
+.modal-dialog--header {
+  max-width: 780px;
+  border-radius: 8px;
+}
+
+  .modal-dialog--header  .modal-content {
+    padding: 0;
+    text-align: left;
+  }
+
+  .modal-dialog--header  .modal__header {
+    color: white;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .modal-dialog--header  .modal__title {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  .modal-dialog--header  .modal__close-btn {
+    color: #000000;
+    top: calc(50% - 8px);
+  }
+
+  .modal-dialog--header  .modal__body {
+    padding: 25px 40px 20px 20px;
+  }
+
+  .modal-dialog--header  .modal__footer {
+    margin-bottom: 40px;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
