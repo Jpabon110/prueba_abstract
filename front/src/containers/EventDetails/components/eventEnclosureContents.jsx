@@ -36,25 +36,25 @@ class EventEnclosure extends Component {
       
     return (
         <div className="dashboard container" style={{ border: '1px solid rgba(0,0,0,.125)', borderRadius: '4px' }}>
-            <label>Información del Recinto deportivo</label>
+            <label> <strong> Información del Recinto deportivo </strong></label>
             <div className="col-md-6">
                 <FormGroup>
-                    <Label className="label_autofin" for="type">Nombre del Recinto: { infoEvent.nombre }</Label>
+                    <Label className="label_autofin" for="type"> <strong> Nombre del Recinto: </strong> { infoEvent.nombre }</Label>
                 </FormGroup>
             </div>
             <div className="col-md-6">
                 <FormGroup>
-                    <Label className="label_autofin" for="subtype">Teléfono: { infoEvent.telefono }</Label>
+                    <Label className="label_autofin" for="subtype"> <strong> Teléfono: </strong> { infoEvent.telefono }</Label>
                 </FormGroup>
             </div>
             <div className="col-md-6">
                 <FormGroup>
-                    <Label className="label_autofin" for="subtype">Calle: { infoEvent.calle }</Label>
+                    <Label className="label_autofin" for="subtype"> <strong> Calle: </strong> { infoEvent.calle }</Label>
                 </FormGroup>
             </div>
             <div className="col-md-6">
                 <FormGroup>
-                    <Label className="label_autofin" for="subtype">Comuna: { infoEvent.comuna }</Label>
+                    <Label className="label_autofin" for="subtype" > <strong> Comuna: </strong> { infoEvent.comuna }</Label>
                 </FormGroup>
             </div>
             {

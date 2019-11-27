@@ -29,7 +29,7 @@ class UsersList extends Component {
       } = this.props;
     return (
         <div className="dashboard container" style={{ border: '1px solid rgba(0,0,0,.125)', borderRadius: '4px' }}>
-            <label>Información del partido</label>
+            <label> <strong>Información del partido</strong></label>
             <div className="col-md-6">
                 <FormGroup>
                     <Label className="label_autofin" for="type">Fecha y hora: { moment(datePlay).format('DD/MM/YYYY HH:mm') }</Label>
