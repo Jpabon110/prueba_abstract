@@ -117,12 +117,12 @@ class EventEnclosure extends Component {
               <br />
               <div className="col-md-6">
                 <FormGroup>
-                  <Label className="label_autofin" for="type">Fecha y hora: {moment(infoEvent.date_play).format('DD/MM/YYYY HH:mm')}</Label>
+                  <Label className="label_autofin" for="type"> <strong>Fecha y hora:</strong> {moment(infoEvent.date_play).format('DD/MM/YYYY HH:mm')}</Label>
                 </FormGroup>
               </div>
               <div className="col-md-6">
                 <FormGroup>
-                  <Label className="label_autofin" for="subtype">Tipo: {infoEvent.types_game ? infoEvent.types_game.name : ''}</Label>
+                  <Label className="label_autofin" for="subtype"> <strong>Tipo:</strong> {infoEvent.types_game ? infoEvent.types_game.name : ''}</Label>
                 </FormGroup>
               </div>
             </div>
@@ -135,22 +135,22 @@ class EventEnclosure extends Component {
               <br />
               <div className="col-md-6">
                 <FormGroup>
-                  <Label className="label_autofin" for="type">Nombre del Recinto: {this.findInfo(infoEvent.enclosure).nombre}</Label>
+                  <Label className="label_autofin" for="type"> <strong>Nombre del Recinto:</strong> {this.findInfo(infoEvent.enclosure).nombre}</Label>
                 </FormGroup>
               </div>
               <div className="col-md-6">
                 <FormGroup>
-                  <Label className="label_autofin" for="subtype">Teléfono: {this.findInfo(infoEvent.enclosure).telefono}</Label>
+                  <Label className="label_autofin" for="subtype"> <strong>Teléfono:</strong> {this.findInfo(infoEvent.enclosure).telefono}</Label>
                 </FormGroup>
               </div>
               <div className="col-md-6">
                 <FormGroup>
-                  <Label className="label_autofin" for="subtype">Calle: {this.findInfo(infoEvent.enclosure).calle}</Label>
+                  <Label className="label_autofin" for="subtype"> <strong>Calle:</strong> {this.findInfo(infoEvent.enclosure).calle}</Label>
                 </FormGroup>
               </div>
               <div className="col-md-6">
                 <FormGroup>
-                  <Label className="label_autofin" for="subtype">Comuna: {this.findInfo(infoEvent.enclosure).comuna}</Label>
+                  <Label className="label_autofin" for="subtype"> <strong>Comuna:</strong> {this.findInfo(infoEvent.enclosure).comuna}</Label>
                 </FormGroup>
               </div>
               <div className="col-md-12">
