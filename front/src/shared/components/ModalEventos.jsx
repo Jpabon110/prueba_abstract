@@ -43,7 +43,7 @@ class ModalComponent extends Component {
   render() {
     const {
       onChangeInput, isOpen, nameEvent, datePlay, Json_RecintosOptions, typeGamesOptions, typeGame,
-      enclosure,
+      enclosure, title
     } = this.props;
 
     return (
@@ -56,7 +56,7 @@ class ModalComponent extends Component {
         >
           <div className="modal__header">
             <button className="lnr lnr-cross modal__close-btn" type="button" onClick={this.props.toggle(false)} />
-            <h2 className="bold-text label_autofin  modal__title" style={{ fontWeight: 'bold', color: '#343a40' }}> <strong>Nuevo Evento</strong></h2>
+    <h2 className="bold-text label_autofin  modal__title" style={{ fontWeight: 'bold', color: '#343a40' }}> <strong>{ title }</strong></h2>
           </div>
             <ModalBody>
               <FormGroup className="columend_date">

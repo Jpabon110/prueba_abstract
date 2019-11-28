@@ -69,6 +69,7 @@ class Events extends Component {
         datePlay: null,
         enclosure: {},
         typeGame: {},
+        title: '',
     };
   }
 
@@ -101,6 +102,7 @@ class Events extends Component {
       datePlay: null,
       enclosure: null,
       typeGame: {},
+      title: 'Nuevo evento'
     });
   }
 
@@ -117,6 +119,7 @@ class Events extends Component {
       datePlay: moment(record.date_play).toDate(),
       typeGame: { value: record.types_game.id, label: record.types_game.name },
       enclosure: this.findInfo(record.enclosure),
+      title: 'Editar evento'
     });
   }
 
@@ -325,6 +328,7 @@ class Events extends Component {
           onChangeInput={this.onChangeInput}
           typeGamesOptions={typeGamesOptions}
           Json_RecintosOptions={Json_RecintosOptions}
+          title={this.state.title}
         />
         <div className="material-table__wrap">
           <br />
